@@ -1,2 +1,93 @@
-$backgroundColor: "#b5615b";
+$quoteBoxBackgroundColor: rgb(181, 97, 91);
+$appBackgroundColor: rgb(83, 166, 173);
+$quoteFontSize: 3rem;
+$authorFontSize: 1.5rem;
+$buttonFontSize: 1rem;
+$quoteBackgroundColor: rgb(207, 230, 232);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app {
+    background: $appBackgroundColor;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#quote-box {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $quoteBoxBackgroundColor;
+    border: 1px solid black;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#quote {
+    height: 50%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $quoteBackgroundColor;
+    padding: 10px;
+}
+
+#text {
+    font-size: $quoteFontSize;
+    text-align: center;
+}
+
+#author {
+    text-align: right;
+    font-size: $authorFontSize;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 15%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#button-container > * {
+    position: relative; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: $buttonFontSize;
+}
+
+#new-quote {
+    height: 50%;
+    width: 20%;
+    position: relative; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: $buttonFontSize;
+    cursor: pointer;
+}
+
+#tweet-quote {
+    text-align: center;
+    height: 40%;
+    width: 20%;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
 
